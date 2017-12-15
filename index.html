@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Txarango</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="css/style.css">
+ <script src="js/ancla.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <header id="section1" class="container-fluid">
+    <h1>Txarango</h1>
+    <div id="clockdiv">
+      <h6>Nuestro próximo concierto es dentro de: </h6>
+      <div>
+        <span class="days"></span>
+        <div class="smalltext">Dias</div>
+      </div>
+      <div>
+        <span class="hours"></span>
+        <div class="smalltext">Horas</div>
+      </div>
+      <div>
+        <span class="minutes"></span>
+        <div class="smalltext">Minutos</div>
+      </div>
+      <div>
+        <span class="seconds"></span>
+        <div class="smalltext">Segundos</div>
+      </div>
+    </div>
+    <script  src="js/index.js"></script>
+  </header>
+
+
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="110" >
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#section1">Inicio</a></li>
+              <li><a href="#section2">Section 2</a></li>
+              <li><a href="#section3">Section 3</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#section41">Section 4-1</a></li>
+                  <li><a href="#section42">Section 4-2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="logo"> </div>
+      <div class="barra" ></div>
+    </nav>
+
+
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/barcelona.jpg" alt="Barcelona" width:"100%;">
+        <div class="carousel-caption">
+          <h3>Barcelona</h3>
+          <p>Foto para nuestro nuevo disco.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/txarango1.jpg" alt="Txarango" width:"100%;">
+        <div class="carousel-caption">
+          <h3>Txarango</h3>
+          <p>Gracias Barcelona por acompañarnos!.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/txarango.jpg" alt="Los Angeles" width:"100%;">
+        <div class="carousel-caption">
+          <h3>Revenidas</h3>
+          <p>Volveremos Villagarcía!</p>
+        </div>
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <div id="section2" class="container-fluid">
+      <div id="presentacion">
+        <h1>El grupo</h1>
+        <p>Txarango es el proyecto más grande que hemos realizado.Nace para dar respuesta a dos inquietudes de la banda.La primera es la necesidad de profundizar en la música y la cultura como herramientas básicas para la transformación social. Reflexionar acerca de conceptos que nos importan como el inconformismo, el pensamiento crítico, la sostenibilidad, la convivencia, la concienciación, etc.
+          Un espacio para ir mucho más allá de la propia tarea que hace el grupo y que nos permite programar todas aquellas propuestas culturales que sentimos cercanas y que trabajan también en esta dirección.</p>
+      </div>
+      <img src="images/separador.png" alt="Separado" >
+  </div>
+
+  <div id="section3" class="container-fluid">
+    <h1>Section 3</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+
+
+  </body>
+</html>

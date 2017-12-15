@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+.agrupar{
+    margin:auto;
+}
+
+body {
+  background-color:black;
+}
+
+@font-face {
+    font-family: "Txarango";
+    src: url(../font/txarango.otf) format("truetype");
+}
+
+header {
+  background-color: black;
+  width: 100%;
+  color: rgb(236, 58, 58);
+  width: 100%;
+  height: 100px;
+  font-family: Oswald;
+  text-transform: uppercase;
+}
+
+header h1 {
+  margin-top: -10px;
+  padding-top: 40px;
+  font-family: 'Txarango';
+}
+
+#logo{
+  background: url(../images/txarango_before.png);
+  position: absolute;
+  top:10px;
+  right: 880px;
+  z-index: 2;
+  width:100px ;
+  height:100px;
+}
+
+.navbar{
+  font-family: 'Oswald';
+  background-color: rgba(0, 0, 0);
+  border-color: transparent;
+  border: none;
+}
+
+.navbar .barra{
+  position: absolute;
+  background: url(../images/header_bg.png) bottom ;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 3 !important;
+}
+
+.affix ~ .container-fluid {
+   position: relative;
+   top: 50px;
+}
+
+/*Reloj*/
+#clockdiv{
+  font-family: 'Oswald';
+	color: #fff;
+	display: inline-block;
+	font-weight: 50;
+	text-align: center;
+	font-size: 14px;
+  position: absolute;
+  top:0;
+  right:0;
+  padding-top: 15px;
+}
+#clockdiv h6{
+  float:left;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: black;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 10px;
+	border-radius: 3px;
+	background: rgb(236, 58, 58);
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 10px;
+}
+/*Slide*/
+#myCarousel{
+    top:0px;
+}
+
+.container {
+    padding: 80px 120px;
+}
+
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 60%;
+    height: 80%;
+    opacity: 0.7;
+}
+
+.person:hover {
+    border-color: #f1f1f1;
+}
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+    width: 100%;
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+#section2{
+  background-color: rgb(251, 246, 230);
+  text-align: center;
+  width: 100%;
+}
+
+#section2 #presentacion{
+  padding-top: 100px;
+  width: 50%;
+  margin:auto;
+  padding-bottom: 100px;
+}
+
+#section2 #presentacion h1{
+  font-family: 'Txarango';
+  font-size: 100px;
+  text-transform: uppercase;
+  color: rgb(236, 58, 58);
+}
+
+#section2 #presentacion p {
+  font-family: 'Oswald';
+  font-size: 19px;
+  text-align: center;
+}
+
+#section3{
+  padding-top: 400px;
+  background-color: rgb(251, 246, 230);
+  text-align: center;
+  width: 100%;
+}
