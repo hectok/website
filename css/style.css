@@ -103,42 +103,37 @@ header h1 {
 	padding-top: 5px;
 	font-size: 10px;
 }
-/*Slide*/
-#myCarousel{
-    top:0px;
-}
 
+
+/*Slide*/
 .container {
     padding: 80px 120px;
 }
-
 .person {
     border: 10px solid transparent;
     margin-bottom: 25px;
-    width: 60%;
+    width: 80%;
     height: 80%;
     opacity: 0.7;
 }
-
 .person:hover {
     border-color: #f1f1f1;
 }
 .carousel-inner img {
     -webkit-filter: grayscale(90%);
-    filter: grayscale(90%);
-    width: 100%;
+    filter: grayscale(90%); /* make all photos black and white */
+    width: 100%; /* Set width to 100% */
     margin: auto;
 }
-
 .carousel-caption h3 {
     color: #fff !important;
 }
-
 @media (max-width: 600px) {
-    .carousel-caption {
-        display: none;
-    }
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
 }
+
 
 #section2{
   background-color: rgb(251, 246, 230);
@@ -168,7 +163,110 @@ header h1 {
 
 #section3{
   padding-top: 400px;
+  padding-bottom: 100px;
   background-color: rgb(251, 246, 230);
   text-align: center;
   width: 100%;
+}
+
+
+/* FOOTER */
+#footer {
+	background-color: black;
+  color:rgb(41, 41, 41);
+  width: 100%;
+  float:right;
+}
+#footer .barrabaja{
+  position: absolute;
+  background: url(../images/barra_inferior.png) top;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+#footer .footer-copyright{
+	background-color: rgb(17, 16, 16);
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align: center;
+}
+
+#footer .footer-copyright p{
+	margin:10px;
+	color: #ccc;
+}
+
+#footer ul{
+	list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+}
+
+#footer h5{
+	font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#footer a{
+	color:#d2d1d1;
+	text-decoration: none;
+}
+
+#footer a:hover, #footer a:focus{
+	text-decoration: none;
+	color:white;
+}
+
+#footer .myCols{
+	text-align: center;
+}
+
+#footer .social-networks{
+	text-align: center;
+  margin-top: 100px;
+	padding-bottom: 38px;
+}
+
+#footer .social-networks h5 {
+  font-family: 'Txarango';
+  font-size: 60px;
+  text-transform: uppercase;
+  color: rgb(236, 58, 58);
+  padding-bottom: 10px;
+}
+
+#footer .social-networks a{
+    font-size: 32px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#footer .social-networks a:hover{
+	text-decoration: none;
+
+}
+
+#footer .facebook:hover{
+	color:#0077e2;
+}
+
+#footer .google:hover{
+	color:#ef1a1a;
+}
+
+#footer .twitter:hover{
+	color: #00aced;
+}
+
+@media screen and (max-width: 767px){
+	#footer {
+		text-align: center;
+	}
 }
